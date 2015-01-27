@@ -4,7 +4,7 @@ There are currently two types of search providers: `screen-scrape` and `json-api
 
 ### `screen-scrape`
 
-Here is an outline `screen-scrape` configuration file, where the documentation is between the `<` and `>`:
+Here is an outline `screen-scrape` configuration file, where the dynamic values are documented between the `<` and `>`:
 
 ```
 {
@@ -30,30 +30,7 @@ Here is an outline `screen-scrape` configuration file, where the documentation i
 }
 ```
 
-Here is an example for [Mininova](http://mininova.org) (which only hosts copywrite-free torrents):
-
-``` json
-{
-	"mininova": {
-		"name": "Mininova",
-		"list": {
-			"url": "http://www.mininova.org/search/{query}/seeds/{page}",
-			"lastPage": "",
-			"items": "",
-			"item": {
-				"name":"",
-				"url":"",
-				"seeds": "",
-				"peers": ""
-			}
-		},
-		"item": {
-			"infohash": "",
-			"tracker": ""
-		}
-	}
-}
-```
+See below for an example: [Mininova](http://mininova.org) (which only hosts copywrite-free torrents).
 
 ### `json-api`
 
