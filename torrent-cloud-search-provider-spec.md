@@ -31,7 +31,9 @@ Here is an outline `screen-scrape` configuration file, where the dynamic values 
 }
 ```
 
-See below for an example: [Mininova](http://mininova.org) (hosts copywrite-free torrents).
+See above for a [Mininova](http://mininova.org) example (hosts copywrite-free torrents). You can use it with:
+
+`SEARCH_PROVIDERS_URL` = `https://gist.githubusercontent.com/jpillora/e667f3d16a6bd403edc4/raw/af4ff4a66a1599ccfd6940d90c633a39ecbf6ba1/torrent-cloud-search-provider-example.json`
 
 ### `json-api`
 
