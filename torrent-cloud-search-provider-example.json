@@ -1,0 +1,20 @@
+{
+	"mininova": {
+		"name": "Mininova",
+		"type": "screen-scraper",
+		"list": {
+			"url": "http://www.mininova.org/search/{query}/seeds/{page}",
+			"items": ".maintable > tr",
+			"item": {
+				"name":"td:nth-child(3) > a:nth-child(2)",
+				"url":"td:nth-child(3) > a:nth-child(2)@href",
+				"size": "td:nth-child(4)",
+				"seeds": "td:nth-child(5)",
+				"peers": "td:nth-child(6)"
+			}
+		},
+		"item": {
+			"magnet": "#download a:nth-child(3)@href"
+		}
+	}
+}
