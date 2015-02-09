@@ -1,6 +1,6 @@
 ## Torrent cloud search provider specification
 
-There are currently two types of search providers: `screen-scrape` and `json-api`
+Search providers are simply a JSON object with each provider as the keys. There are currently two types of search providers: `screen-scrape` and `json-api`:
 
 ### `screen-scrape`
 
@@ -32,6 +32,10 @@ Here is an outline `screen-scrape` configuration file, where the dynamic values 
 ```
 
 By default, all of the selectors above, will use the result element's text value. If you wan't to use the value of an attribute instead suffix your selector with `@<attribute name>`. If a Regular Expression is more convienient than CSS selector you can use `/<regex>/`, though note, since `\` is a JavaScript string escape character, you'll have to escape it first – so `\` all become `\\`.
+
+In `list.url` you must include the placeholders `{query}` and `{page}`, when you perform a search page is set to `1` and will incremenet as you use the "Load More" button. For search pages which are zero-indexed, use `{zpage}` instead.
+
+If `magnet` is not defined in `list.magnet` then a follow up `item` query will be required, where you may use `magnet` or the magnet URI can be infered with `infohash` and `tracker`.
 
 See above for a [Mininova](http://mininova.org) example (hosts copywrite-free torrents). You can use it with:
 
