@@ -31,6 +31,8 @@ Here is an outline `screen-scrape` configuration file, where the dynamic values 
 }
 ```
 
+By default, all of the selectors above, will use the result element's text value. If you wan't to use the value of an attribute instead suffix your selector with `@<attribute name>`. If a Regular Expression is more convienient than CSS selector you can use `/<regex>/`, though note, since `\` is a JavaScript string escape character, you'll have to escape it first – so `\` all become `\\`.
+
 See above for a [Mininova](http://mininova.org) example (hosts copywrite-free torrents). You can use it with:
 
 `SEARCH_PROVIDERS_URL` = `https://gist.githubusercontent.com/jpillora/e667f3d16a6bd403edc4/raw/af4ff4a66a1599ccfd6940d90c633a39ecbf6ba1/torrent-cloud-search-provider-example.json`
